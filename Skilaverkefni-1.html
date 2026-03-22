@@ -7,41 +7,130 @@
     <!-- skilaverkefni 1 -->
     <link rel="stylesheet" href="Styles.css" />
   </head>
-  <body>
 
-    <!-- Header start -->
-      <section >  
-    <header>
-        <div>
-            <h1>
-                <p>Hey! I'm Luffy the guy who's gonna be King of the Pirates!</p>
-            </h1>
-        </div>
-      <div>
-        <img
-          class="main-luffy"
-          src="/Images/Luffy-Main-Portrait.webp"
-          height="100px"
-          width="150px"
-          alt="Luffy intro self image"
-        />
-      </div>
+  <body>
+    <!-- Header Start -->
+    <div class="container">
       <div class="Navigation">
-        <nav>
-            <a href="/HomePage.html">HomePage</a>
-            <a href="/Contact-me.html">Contact us!</a>
-            <a href="#my-exploits">See my exploits</a>
-        </nav>
+          <nav>
+            <a href="/Contact-me.html">Contact me</a>
+            <a href="/HomePage.html">Homepage</a>
+            <a href="#right-side">Schedule</a> 
+          </nav>
       </div>
-      </section>
-    </header>
+      <div class="main-content">
+          <div class="Introduction">
+            <header>One hat to rule them all.</header>
+              <h1> The Name's Luffy. </h1>
+              <img src="/Images/Luffy-Main-Portrait.webp", alt="Luffy Image">
+              <section><h2>about Luffy</h2></section>
+              <ul>
+                <li>I will become the king of the pirate's</li>
+                <li>Eating meat daily is a neccesity</li>
+                <li>My crew is my life</li>
+                <li>I ate the nika nika no mi Fruit</li>
+              </ul>
+          </div>
     <!-- Header end -->
 
-    <!-- Short summary start -->
+    <!-- schedule start -->
+          <div class="right-side">
+            <table border="1">
+                <th>Sunrise</th>
+                <th>Morning</th>
+                <th>Noon</th>
+                <th>Afternoon</th>
+                <th>Evening</th>
+                <th>Dusk</th>
+                <th>Night</th>
+            
+              </tr>
+              <tr>
+                <td>Monday</td>
+                <td>Wake up</td>
+                <td>Eat meat</td>
+                <td>Train</td>
+                <td>fight big mom</td>
+                <td>Eat Dinner</td>
+                <td>Sleep</td>
+                
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>Sleep in</td>
+                <td>Wake up</td>
+                <td>Train</td>
+                <td>Fight Akugi</td>
+                <td>Eat dinner</td>
+                <td>Sleep</td>
+                
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>Wake up</td>
+                <td>Go back to bed</td>
+                <td>Sleep</td>
+                <td>wake up</td>
+                <td>eat meat</td>
+                <td>sleep</td>
+                
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>Wake up</td>
+                <td>Go to wano</td>
+                <td>eat Sushi</td>
+                <td>Fight kaido</td>
+                <td>Eat meat</td>
+                <td>Sleep</td>
+                
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>Wake up</td>
+                <td>Annoy Sanji</td>
+                <td>Get food from Sanji</td>
+                <td>Steal tangerines</td>
+                <td>Fight marines</td>
+                <td>Sleep</td>
+                
+              </tr>
+            </table>
+            <!-- Schedule end -->
 
-    <section id="my-exploits">
-        
-    </section>
+            <!-- application Form start -->
+            <div class="feedback-form">
+                <div class="feedback-container">
+                    <h3>Sign up Form</h3>
+                    <form id="feedbackForm">
+                      <input type="text" name="name" placeholder="Your Name" required />
+                      <input type="email" name="email" placeholder="Your Email" required />
+                      <textarea name="message" rows="4" placeholder="You're Qualifications" required></textarea>
+                      <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Application form -->
+          </div>
+
+
+
+      </div>
+    </div>
+
+    <footer>
+      <marquee direction="right"><p>&copy; 2026- -@luffy.email</p></marquee>
+    </footer>
+
+
+      <script>
+    const form = document.getElementById('feedbackForm');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      alert('Form Submitted\nThank you for visiting my website.\n- Daniel'); 
+      form.reset(); 
+    });
+  </script>
   </body>
-
 </html>
